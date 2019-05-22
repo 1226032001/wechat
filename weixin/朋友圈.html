@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>朋友圈</title>
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        html body .iconfont{
+            font-size: 50px;
+        }
+
+        .imgs{
+            float: right;
+            color: white;
+        }
+
+        .top {
+            color: white;
+            height: 50px;
+            /*border: solid 1px #aaaaaa;*/
+            font-size: 35px; /*设置字体大小*/
+            line-height: 50px; /*文字垂直居中*/
+        }
+
+        .top1{
+            height: 80px;
+            /*border: solid 1px #aaaaaa;*/
+            font-size: 35px; /*设置字体大小*/
+            line-height: 80px; /*文字垂直居中*/
+        }
+
+        .top1 .l{
+            margin-left: 50px;
+            float: left;
+            font-size: 60px;
+        }
+
+        .top1 .r{
+            color:white;
+            margin-right: 50px;
+            float: right;
+            font-size: 60px;
+        }
+
+        .top1 a{
+            text-decoration-line: none;
+            color: white;
+        }
+
+        .top2{
+            width: 200px;
+            height: 200px;
+
+        }
+
+        .top2 .w{
+            font-size: 50px;
+            position: relative;
+            top: 580px;left: 550px;
+            color: white;
+        }
+
+        .top2 .p{
+            position:relative;
+            top: 480px;
+            left: 700px;
+        }
+
+        ul{
+            list-style: none;
+            height:3000px;
+            overflow: scroll;
+        }
+
+        ul li{
+            height: 200px;
+            border: #D0D0D0 1px solid;
+        }
+
+        ul .back{
+            height: 800px;
+            background-image: url("../img/shan.jpg");
+        }
+
+        ul .xin{
+            height: 140px;
+        }
+
+        ul .xin div {
+            height: 140px;
+            font-size: 50px;
+            line-height: 140px;
+        }
+
+        ul .xin .xw{
+            margin-left: 50px;
+        }
+
+        ul .xin .xi{
+            float: right;
+            margin-right: 50px;
+           position: relative;
+            top: 20px;
+        }
+
+        ul .xin div .dong{
+            float: right;
+            margin-right: 50px;
+        }
+
+        ul .yu{
+            height: 1200px;
+        }
+
+        ul .yu .pyq .yt{
+            margin: 50px;
+        }
+
+        ul .yu .pyq .yn{
+            margin: 50px;
+            position: relative;
+            top: -230px;
+            left: 200px;
+        }
+
+        ul .yu .pyq .yn .x1{
+            font-size: 60px;
+        }
+
+        ul .yu .pyq .yn .n1{
+            font-size: 50px;
+            position: relative;
+            top: 10px;
+        }
+
+        ul .yu .pyq .yn .n1 img{
+            position: relative;
+            top: 10px;
+        }
+
+        ul .yu .zan{
+            height:200px ;
+            position: relative;
+            top: -200px;
+            left: 230px;
+            font-size: 35px;
+            color: #aaaaaa;
+        }
+
+        ul .yu .zan img{
+            position: relative;
+            left: 500px;
+        }
+
+        ul .yu .zan .dianzan{
+            height: 100px;
+            width: 500px;
+            background-color: cornflowerblue;
+            position: absolute;
+            top: -50px;
+            left:100px;
+            display: none;
+        }
+
+        ul .yu .zan:hover .dianzan{
+            display: block;
+            background-color: #aaaaaa;
+        }
+
+
+        ul .yu .zan:hover .dianzan .ping{
+            list-style: none;
+        }
+
+        ul .yu .zan:hover .dianzan .ping li{
+            width: 250px;
+            text-align: center;
+            border: none;
+            float: left;
+            color: white;
+            position: relative;
+            top: 20px;
+        }
+
+        ul  .yu .zan .who{
+            width: 700px;
+            height: 80px;
+            background-color: #F0F0F0 ;
+            margin-top: 50px;
+
+        }
+
+        ul  .yu .zan .who .wn{
+            color: cornflowerblue;
+            position: relative;
+            top: 20px;
+            margin-left: 50px;
+        }
+        </style>
+</head>
+<body>
+    <ul>
+        <li class="back">
+            <div id="wrap">
+                <div class="top">
+                    <span>傍晚6:08</span>
+                    <span class="iconfont" >&#xe6bd;</span>
+                    <!--因为imgs是向右浮动 所以第一行为最右第一个-->
+                    <span class="iconfont imgs" >&#xe652;</span>
+                    <span class="iconfont imgs" >&#xe7ac;</span>
+                    <span class="iconfont imgs" >&#xe7ac;</span>
+                    <span class="iconfont imgs" >&#xe601;</span>
+                </div>
+                <div class="top1">
+                    <a href="发现.html"><span class="iconfont l">&#xe606;</span></a>
+                    <span class="iconfont r">&#xe60d;</span>
+                </div>
+                <div class="top2">
+                    <span class="top2 w">aliu</span>
+                    <span class="top2 p"><img src="../img/头.jpg" height="200" width="200"/></span>
+                </div>
+            </div>
+
+        </li>
+        <li></li>
+        <li class="xin">
+            <div>
+                <span class="xw">朋友的新动态</span>
+                <span class="iconfont dong">&#xe6ab;</span>
+                <span class="xi"><img src="../img/王凯1.jpg" height="100" width="100"/></span>
+
+            </div>
+        </li>
+        <li class="yu">
+            <div class="pyq">
+                <div class="yt">
+                    <img src="../img/白宇.jpg" height="150" width="150"/>
+                </div>
+                <div class="yn">
+                    <span class="x1">白宇</span>
+                    <br>
+                    <span class="n1">胡子长长了</span>
+                    <br>
+                    <span class="n1"><img src="../img/yu.jpg" height="666" width="500"/></span>
+                </div>
+            </div>
+            <div class="zan">
+                <div>
+                    <span>三小时前</span>
+                    <span><img src="../img/sheng.png" height="36" width="64"/></span>
+                    <div class="dianzan">
+                        <ul class="ping">
+                            <li class="iconfont ping">点赞</li>
+                            <li class="iconfont ping">评论</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="who">
+                    <span class="wn">aliu</span>
+                </div>
+            </div>
+
+        </li>
+
+
+
+
+    </ul>
+</body>
+</html>

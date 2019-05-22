@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通讯录</title>
+    <link rel="stylesheet" href="../css/iconfont.css">
+
+    <style>
+
+        *{
+            padding:0;
+            margin: 0;
+        }
+
+        /*通过定义html中的body来设置字体大小*/
+        html body .iconfont{
+            font-size: 50px;
+        }
+
+        .imgs{
+            float: right;
+        }
+
+        .top {
+            height: 50px;
+            border: solid 1px #aaaaaa;
+            font-size: 35px; /*设置字体大小*/
+            line-height: 50px; /*文字垂直居中*/
+            background-color: #E0E0E0;
+        }
+
+        #top1{
+            height: 150px;
+            border: #aaaaaa solid 1px;
+            font-size: 50px;
+            line-height: 150px;
+            background-color:  #E0E0E0;
+        }
+        #top1 .w{
+            position: relative;/*相对定位*/
+            margin: 15px;
+            left: 20px;/*相对定位中设置位置  左为负数 右为正数*/
+        }
+
+
+        #top1 .w11{
+            margin: 15px;
+            position: absolute;/*相对定位*/
+            left: 700px;/*相对定位中设置位置  左为负数 右为正数*/
+            top: 60px;/*相对定位设置位置 上位负数 下为正数*/
+        }
+
+        #top1 .w12{
+            position: absolute;/*相对定位*/
+            margin: 15px;
+            left: 850px;
+            top: 60px;
+        }
+
+        #top1 .pic {
+            width: 300px;
+            height: 500px;
+            background-color: red;
+            top: 50px;
+            left:-310px;
+            position: absolute;
+
+            display: none;
+        }
+
+        #top1 .w12:hover .pic{
+            display: block;
+            background-color: rgba(58,58,58,0.87);
+        }
+
+        ul{
+            list-style: none;
+            /*width: 980px;*/
+            height: 1750px;
+            overflow: scroll;/*多余文本以滚动条形式*/
+        }
+
+        ul li{
+
+            height: 160px;
+            border-bottom:1px solid black;
+        }
+
+        ul li .text .test{
+            font-size: 100px;
+            line-height: 190px;
+        }
+
+        ul li .text .wenzi{
+            font-size: 50px;
+        }
+
+        ul .zimu{
+            font-size: 50px;
+            height: 100px;
+            background-color: #E0E0E0;
+            line-height: 100px;
+        }
+
+        ul .t .timg{
+            margin-left: 30px;
+            position: relative;
+            top: 5px;
+        }
+
+        ul .t .tname{
+            font-size: 50px;
+            position: relative;
+            top: -50px;
+            margin-left: 30px;
+        }
+
+        #end{
+            display: flex;/*成为盒模型*/
+            border: #aaaaaa 1px solid;
+            height: 180px;
+        }
+
+        #end div{
+            flex: 1;/*默认分格*/
+            border: #F0F0F0  solid 1px;
+            text-align: center;
+            background-color: #F0F0F0;
+        }
+
+        #end div a{
+            text-decoration-line: none;
+            color: black;
+        }
+        #end div .iconfont{
+            font-size: 90px;
+            position: relative;
+            top: 10px;
+        }
+
+        #end div .text{
+            font-size: 35px;
+            position: relative;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div class="top">
+        <span>傍晚6:08</span>
+        <span class="iconfont" >&#xe6bd;</span>
+        <!--因为imgs是向右浮动 所以第一行为最右第一个-->
+        <span class="iconfont imgs" >&#xe652;</span>
+        <span class="iconfont imgs" >&#xe7ac;</span>
+        <span class="iconfont imgs" >&#xe7ac;</span>
+        <span class="iconfont imgs" >&#xe601;</span>
+    </div>
+</div>
+
+<div id="top1">
+    <div class="w"><span>发现</span></div>
+    <!--使用div标签是他单独成为一个盒-->
+    <div class="w11"><span class="iconfont imgs " >&#xe611;</span></div>
+    <div class="w12"><span class="iconfont imgs " >&#xe657;</span>
+    <div class="pic">
+        <ul class="sitem">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    </div>
+</div>
+
+<ul>
+    <li>
+        <div class="text">
+            <span class="iconfont test" >&#xe600;</span>
+            <span class="wenzi">新的朋友</span>
+        </div>
+    </li>
+    <li>
+        <div class="text">
+            <span class="iconfont test">&#xe60f;</span>
+            <span class="wenzi">群聊</span>
+        </div>
+    </li>
+    <li>
+        <div class="text">
+            <span class="iconfont test">&#xe610;</span>
+            <span class="wenzi">标签</span>
+        </div>
+    </li>
+    <li>
+        <div class="text">
+            <span class="iconfont test">&#xe68b;</span>
+            <span class="wenzi">公众号</span>
+        </div>
+    </li>
+
+    <li class="zimu">
+        <div >B</div>
+    </li>
+    <li class="t">
+        <span class="timg"><img src="../img/白宇.jpg" height="150" width="150"/></span>
+        <span class="tname">白宇</span>
+    </li>
+    <li class="zimu">
+        <div >K</div>
+    </li>
+    <li class="t">
+    <span class="timg"><img src="../img/王凯1.jpg" height="150" width="150"/></span>
+    <span class="tname">凯凯王</span>
+    </li>
+    <li class="zimu">
+        <div >W</div>
+    </li>
+    <li class="t">
+        <span class="timg"><img src="../img/xun.jpg" height="150" width="150"/></span>
+        <span class="tname">魏大勋</span>
+    </li>
+    <li class="zimu">
+        <div >Z</div>
+    </li>
+    <li class="t">
+        <span class="timg"><img src="../img/龙1.jpg" height="150" width="150"/></span>
+        <span class="tname">朱一龙</span>
+    </li>
+    <li class="t">
+        <span class="timg"><img src="../img/山.jpg" height="150" width="150"/></span>
+        <span class="tname">张一山</span>
+    </li>
+</ul>
+
+
+</div><div id="end">
+    <div >
+        <a href="微信.html"><span class="iconfont">&#xe62b;</span></a>
+        <br>
+        <a href="微信.html"><span class="text">微信</span></a>
+    </div>
+    <div >
+        <a href="通讯录.html"><span class="iconfont">&#xe6c2;</span></a>
+        <br>
+            <a href="通讯录.html"><span class="text">通讯录</span></a>
+    </div>
+    <div>
+        <a href="发现.html"><span class="iconfont">&#xe60b;</span></a>
+        <br>
+            <a href="发现.html"><span class="text">发现</span></a>
+    </div>
+    <div >
+        <a href="我.html"><span class="iconfont">&#xe626;</span></a>
+        <br>
+            <a href="我.html"><span class="text">我</span></a>
+    </div>
+
+</div>
+</body>
+</html>
